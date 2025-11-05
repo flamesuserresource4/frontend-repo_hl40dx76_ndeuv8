@@ -1,5 +1,4 @@
 import React from 'react';
-import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
   return (
@@ -9,7 +8,7 @@ export default function Hero() {
           <div className="relative z-10">
             <span className="inline-flex items-center rounded-full bg-sky-600/10 px-3 py-1 text-sm text-sky-700">Home Loan Made Simple</span>
             <h1 className="mt-6 text-4xl font-extrabold leading-tight text-gray-900 sm:text-5xl md:text-6xl">
-              Apply for your home loan in minutes
+              Move into your dream home faster
             </h1>
             <p className="mt-5 max-w-xl text-lg text-gray-600">
               Get competitive rates, instant pre-approval, and expert support from start to finish.
@@ -32,20 +31,23 @@ export default function Hero() {
 
             <div className="mt-6 flex items-center gap-4 text-sm text-gray-500">
               <div className="flex -space-x-2">
-                <img src="https://i.pravatar.cc/40?img=1" alt="" className="h-8 w-8 rounded-full border border-white" />
-                <img src="https://i.pravatar.cc/40?img=2" alt="" className="h-8 w-8 rounded-full border border-white" />
-                <img src="https://i.pravatar.cc/40?img=3" alt="" className="h-8 w-8 rounded-full border border-white" />
+                <img src="https://i.pravatar.cc/40?img=1" alt="Customer avatar" className="h-8 w-8 rounded-full border border-white" />
+                <img src="https://i.pravatar.cc/40?img=2" alt="Customer avatar" className="h-8 w-8 rounded-full border border-white" />
+                <img src="https://i.pravatar.cc/40?img=3" alt="Customer avatar" className="h-8 w-8 rounded-full border border-white" />
               </div>
               <p>10k+ happy homeowners</p>
             </div>
           </div>
 
-          <div className="relative h-[520px] w-full rounded-2xl bg-gradient-to-br from-sky-50 via-white to-violet-50">
-            <Spline
-              scene="https://prod.spline.design/41MGRk-UDPKO-l6W/scene.splinecode"
-              style={{ width: '100%', height: '100%' }}
+          {/* Visual side with family photo behind new home */}
+          <div className="relative h-[520px] w-full overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1800&auto=format&fit=crop"
+              alt="Happy family standing in front of their new home"
+              className="absolute inset-0 h-full w-full object-cover"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-white/70 via-white/20 to-transparent" />
+            <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white/80 to-transparent" />
           </div>
         </div>
       </div>
